@@ -1,0 +1,356 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offer</title>
+    <link rel="stylesheet" href="{% static  '/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="{% static '/js/bootstrap.js' %}"></script>
+    <script src="{% static '/js/index.js' %}"></script>
+</head>
+<body>
+
+     <!-- animation login -->
+   
+   <!-- <div>
+
+    <div class="overlay"></div>
+    <div class="login-box">
+      <span class="closeButton" onclick="closeModel()"> &times; </span>
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="">
+          <label>Password</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+
+        <small><a href="#" style="font-size: 10px;"> Create a new account</a></small>
+      </form>
+    </div>
+  </div> -->
+
+  <!-- Chat -->
+
+
+  <div class="chatbot">
+    <i class="bi bi-chat-left-quote" style="font-size:20px;"></i>
+  </div> 
+
+ <div class="chatbox">
+    <button class="close" id="close" onclick="hide()">&times;</button>
+    <h6><i class="bi bi-robot"></i> &nbsp; &nbsp; &nbsp;  Customer's Service</h6>
+    <div class="chatting">
+    <div class="chat">
+      <button><i class="fa-solid fa-microphone"></i></button>
+      <input type="text" placeholder="Send messege...">
+      <button><i class="bi bi-send-fill"></i></button>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="home-icon">
+    <a href="#"><img src="{% static '/img/arr.jpg' %}" alt=""></a>
+  </div>
+
+<!-- Navigation -->
+
+<header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navBar-top">
+        <div class="container-fluid pr-5 pl-5">
+            <a class="navbar-brand" href="#"><img src="{% static '/img/logo.png' %}" class="logo-pic" alt="logo"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mu-about-us">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="order">Orders</a>
+                    </li>
+
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="offer">Offers</a>
+                  </li>
+
+                    <li class="nav-item">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#help">Help</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#help"><i class="bi bi-bell"></i></a>
+                  </li>
+
+                  
+                </ul>
+                
+                <form class="d-flex" role="search" style="margin-left: 180px;">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                
+
+                <ul classs="navbar-nav mt-5 mb-lg-0 login">
+                  <li class="nav-item" >
+                    <a class="nav-link mt-3" href="#" onclock="showModel()">Log in</a>
+                  </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Today special -->
+<section id="menu" class="container text-center mt-5">
+
+  <h2>OUR MENU</h2>
+
+
+      <div class="row mt-5">
+              
+          <span class=" col-md-12 col-sm-12 col-xl-6 col-xxl-6 col-lg-6 mb-3">
+                  <Button type="button" class="btn btn-secondary">Best Selling</Button>
+          </span>
+
+
+          <span class=" col-md-12 col-sm-12 col-xl-6 col-xxl-6 col-lg-6">
+              <Button type="button" class="btn btn-secondary">Today Special</Button>
+
+              </span>
+      </div>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4 box34">
+    <img src="{% static '/img/dosa3.jpg' %}" alt="burder">
+    <div class="content23">
+      <h3>Dosa</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="swiggy">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+  <div class="box34 col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4">
+    {% comment %} <img src="/img/burger.jpg" alt="burger"> {% endcomment %}
+    <img src="{% static '/img/dosa3.jpg' %}" alt="burder">
+    <div class="content23">
+      <h3>Burger</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="swiggy">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+  <div class="box34 col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4">
+    {% comment %} <img src="/img/egg.jpg" alt="burder"> {% endcomment %}
+    <img src="{% static '/img/dosa3.jpg' %}" alt="burder">
+
+    <div class="content23">
+      <h3>Egg</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="/swiggy.html">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+  <div class="box34 col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4">
+    <img src="{% static '/img/fish.jpg' %}" alt="burder">
+    <div class="content23">
+      <h3>Fish</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="swiggy">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+  <div class="box34 col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4">
+    <img src="{% static '/img/chatni.jpg' %}" alt="burder">
+    <div class="content23">
+      <h3>Frech-Fry</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="swiggy">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+  <div class="box34 col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4">
+    <img src="{% static '/img/idli.jpg' %}" alt="burder">
+    <div class="content23">
+      <h3>Idli</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="swiggy">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+  <div class="box34 col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4">
+    <img src="{% static '/img/pizza2.jpg' %}" alt="burder">
+    <div class="content23">
+      <h3>Pizza</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="swiggy">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+  <div class="box34 col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4">
+    <img src="{% static '/img/popcon.jpg' %}" alt="burder">
+    <div class="content23">
+      <h3>Dosa</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="swiggy">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+  <div class="box34 col-md-6 col-sm-12 col-xl-4 mt-5 col-xxl-4 col-lg-4">
+    <img src="{% static '/img/tandoori.jpg' %}" alt="burder">
+    <div class="content23">
+      <h3>Chicken Tandoori</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button><a href="swiggy">Swiggy</a></button>
+      <button>Zomato</button>
+      <button>Panda</button>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Footer -->
+
+<footer class="container-grid footer mt-5">
+    <div class="footer container for-footer mt-5">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Something</h1>
+            
+        <h2>Contact</h2>
+        
+        <address>
+          NH 544, Salem Main Road, Pallakapalayam
+Komarapalayam, 637303<br>
+              
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          <small><a href="#">demo@gmail.com</a></small>
+        </address>
+      </div>
+      
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Breakfast</h2>
+    
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Tea, Biscuit, Bread</a>
+            </li>
+    
+            <li>
+              <a href="#">Roti Dosa</a>
+            </li>
+                
+            <li>
+              <a href="#">Idli </a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Lunch</h2>
+          
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Biryani</a>
+            </li>
+            
+            <li>
+              <a href="#">Tandoori chicken</a>
+            </li>
+            
+            <li>
+              <a href="#">samosas</a>
+            </li>
+            
+            <li>
+              <a href="#"> dal makhani</a>
+            </li>
+            
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+            
+            <li>
+              <a href="#">IoT</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+          
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="legal">
+        <p>&copy; 2023 Something. All rights reserved.</p>
+        
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> Our from Anywhere</span>
+        </div>
+      </div>
+    </div>
+    </footer>
+    
+    
+</body>
+</html>
